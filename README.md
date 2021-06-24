@@ -1,2 +1,2 @@
-# Python
- Projects in python made by myself
+# Projetos em Python
+ Projetos feitos por mim na linguagem **Python**
