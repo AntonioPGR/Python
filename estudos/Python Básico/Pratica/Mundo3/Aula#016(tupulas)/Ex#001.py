@@ -1,0 +1,8 @@
+lanche = ('Hambuguer', 'Suco', 'Pizza', 'Pudim')
+print(lanche)
+print(lanche[0])
+print(lanche[-1])
+print(lanche[0:3])
+print(lanche[2:])
+print(lanche[:2])
+print(lanche[-3:])

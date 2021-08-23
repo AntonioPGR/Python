@@ -1,0 +1,55 @@
+def metade(p, form=True):
+    if form:
+        p = f'R${p/2:.2f}'
+        return p
+    else:
+        return p / 2
+
+
+def dobro(p, form=True):
+    if form:
+        p = p*2
+        p = f'R${p:.2f}'
+        return p
+    else:
+        return p * 2
+
+
+def aumentar(p, porc=0, form=True):
+    if form:
+        aumento = (porc / 100) * p
+        p += aumento
+        p = f'R${p:.2f}'
+        return p
+    else:
+        aumento = (porc / 100) * p
+        p += aumento
+        return p
+
+
+def diminuir(p, porc=0, form=True):
+    if form:
+        aumento = (porc / 100) * p
+        p -= aumento
+        p = f'R${p:.2f}'
+        return p
+    else:
+        aumento = (porc / 100) * p
+        p -= aumento
+        return p
+
+
+def moeda(p):
+    p = f'R${p:.2f}'
+    return p
+
+
+def resumo(p, menos=0, mais=0):
+    print('-'*35)
+    print(f'{"Resumo Do Valor":^35}')
+    print('-'*35)
+    print(f'Preço analisado:        R${p:.2f}')
+    print(f'Dobro do preço:         {dobro(p)}')
+    print(f'metade do preço:        {metade(p)}')
+    print(f'{mais}% de aumento:         {aumentar(p, mais)}')
+    print(f'{menos}% de desconto:        {diminuir(p, menos)}')
